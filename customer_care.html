@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>customer_care</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+	<!-- Navigation bar-->
+	<header>
+		<div class="header">
+			<img style="height:45px ;" src="globe.png" alt = "logo">
+			<h1 style="margin-top: 5px;">atlas</h1>
+			<img style="height: 25px; margin-left: 300px; margin-top: -55px;" src="plane.png">
+			<a class="four" href="Home_page.html" style="margin-left: 340px; margin-top: -55px;" >Flights</a>
+			<img style="height: 25px; margin-left: 440px; margin-top: -55px;"src="train.png">
+			<a class="four" href="train.html" style="margin-left: 480px; margin-top: -55px;" >Trains</a>
+			<img style="height: 25px; margin-left: 570px; margin-top: -55px;"src="bus.png">
+			<a class="four" href="bus.html" style="margin-left: 610px; margin-top: -55px;" >Bus</a>
+			<img style="height: 25px; margin-left: 1305px; margin-top: -55px;"src="user.png">
+			<a class="four" href="login_signup.html" style="margin-left: 1345px; margin-top: -55px;" >Login/signup</a>
+			<img style="height: 25px; margin-left: 1105px; margin-top: -55px;"src="telephone-call.png">
+			<a class="four" href="" style="margin-left: 1145px; margin-top: -55px;" >Customer care</a>
+		</div>
+	</header>
+
+	<style>
+		.Container {
+		  position: relative;
+		  font-family: Arial;
+		}
+
+		.Text-block {
+		  position: absolute;
+		  bottom: 100px;
+		  right: 900px;
+		  background-color: black;
+		  color: white;
+		  padding-left: 20px;
+		  padding-right: 20px;
+		  opacity: 0.7;
+		  padding-bottom: 20px;
+		}
+
+		.button {
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.4s;
+		  cursor: pointer;
+		}
+
+		.button2 {
+		  background-color: white; 
+		  color: black; 
+		  border: 2px solid #008CBA;
+		}
+
+		.button2:hover {
+		  background-color: #008CBA;
+		  color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="Container">
+		<img style="height: 690px; width: 100%; margin-top: -15px;" src="https://www.pixelstalk.net/wp-content/uploads/2015/05/Plane-on-the-beach.jpg">
+		<div class="Text-block">
+    		<h3><b>Thanks for your interest in ATLAS</b></h3>
+    		<p>For queries write to us.</p>
+    		<form>
+    			<label for="name"><b>Name:</b></label>&emsp;&emsp;
+    			<input type="text" name="name" placeholder=" Enter Name" style="height: 30px; border-radius: 5px;" required pattern="[a-zA-Z ]{1,15}", title="Only Alphabets." size="40"><br><br>
+
+    			<label for="email"><b>Email:</b></label>&emsp;&emsp;
+    			<input type="text" placeholder=" Enter Email" name="email" style="height: 30px; border-radius: 5px;" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter a valid E-mail address." size="40"><br><br>
+
+    			<label for="text"><b>Queries:</b></label>&emsp;
+    			<input type="text" name="query" placeholder=" Enter your queries" style="height: 70px; border-radius: 5px;" required pattern="[a-zA-Z0-9 ]{1,100}", title="Only Alphabets." size="40"><br><br>
+
+    			<input class="button button3" style="margin-left: 153px; padding: 10px 20px; border-radius: 5px;" type="submit" name="submit">
+    		</form><br>
+    		<center>
+    			<p>Reach us out here:</p>
+    			<p><b>Mail:</b> atlas.travel@gmail.com</p>
+    			<p><b>Phone no:</b> (+91) 9546218964</p>
+    		</center>	
+  		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer" style="margin-top: 0px;">
+		<br>
+		<div style="margin-bottom: -40px; margin-left: 30px;">
+			<img style="width: 20px;" src="facebook.png"> &emsp; <img style="width: 20px;" src="twitter.png"> &emsp; <img style="width: 20px;" src="instagram.png">
+		</div>
+		<div class="footer_ref">
+			<p><a class="one" href="">About us</a> &emsp; <a class="one" href="">Investors relations</a> &emsp; <a class="one" href="">CSR</a> &emsp; <a class="one" href="">Mobile</a> &emsp; <a class="one" href="">Privacy</a> &emsp; <a class="one" href="">Terms of use</a> &emsp; <a class="one" href="">Careers</a> &emsp; <a class="one" href="">Customer service</a> <br><br> </p>
+		</div><br><br><br><hr>
+		<p style="margin-left:470px; padding-bottom: 20px; color: white">&copy; 2021 ATLAS Technologies Pvt Ltd. India. All trademarks of their respective owners.</p>
+	</footer>
+
+</body>
+</html>

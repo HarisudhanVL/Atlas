@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login/Signup</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+	<script src="javascript_signup.js"></script>
+	<!-- Navigation bar-->
+	<header>
+		<div class="header">
+			<img style="height:45px ;" src="globe.png" alt = "logo">
+			<h1 style="margin-top: 5px;">atlas</h1>
+			<img style="height: 25px; margin-left: 300px; margin-top: -55px;" src="plane.png">
+			<a class="four" href="Home_page.html" style="margin-left: 340px; margin-top: -55px;" >Flights</a>
+			<img style="height: 25px; margin-left: 440px; margin-top: -55px;"src="train.png">
+			<a class="four" href="train.html" style="margin-left: 480px; margin-top: -55px;" >Trains</a>
+			<img style="height: 25px; margin-left: 570px; margin-top: -55px;"src="bus.png">
+			<a class="four" href="bus.html" style="margin-left: 610px; margin-top: -55px;" >Bus</a>
+			<img style="height: 25px; margin-left: 1305px; margin-top: -55px;"src="user.png">
+			<a class="four" href="login_signup.html" style="margin-left: 1345px; margin-top: -55px;" >Login/signup</a>
+			<img style="height: 25px; margin-left: 1105px; margin-top: -55px;"src="telephone-call.png">
+			<a class="four" href="customer_care.html" style="margin-left: 1145px; margin-top: -55px;" >Customer care</a>
+		</div>
+	</header>
+
+	<style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+		* {box-sizing: border-box}
+
+		/* Full-width input fields */
+		input[type=text], input[type=password] {
+		  width: 100%;
+		  padding: 15px;
+		  margin: 5px 0 22px 0;
+		  display: inline-block;
+		  border: none;
+		  background: #f1f1f1;
+		}
+
+		input[type=text]:focus, input[type=password]:focus {
+		  background-color: #ddd;
+		  outline: none;
+		}
+
+		hr {
+		  border: 1px solid #f1f1f1;
+		  margin-bottom: 25px;
+		}
+
+		/* Set a style for all buttons */
+		button {
+		  background-color: #04AA6D;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		  opacity: 0.9;
+		}
+
+		button:hover {
+		  opacity:1;
+		}
+
+		/* Extra styles for the cancel button */
+		.cancelbtn {
+		  padding: 14px 20px;
+		  background-color: #f44336;
+		}
+
+		/* Float cancel and signup buttons and add an equal width */
+		.cancelbtn, .signupbtn {
+		  float: left;
+		  width: 50%;
+		}
+
+		/* Add padding to container elements */
+		.container {
+		  padding: 16px;
+		  margin-top: -15px;
+		}
+
+		/* Clear floats */
+		.clearfix::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+
+		/* Change styles for cancel button and signup button on extra small screens */
+		@media screen and (max-width: 300px) {
+		  .cancelbtn, .signupbtn {
+		     width: 100%;
+		  }
+		}
+	</style>
+</head>
+<body>
+	<form action="Home_page.html" style="border:1px solid #ccc">
+	  <div class="container">
+	    <h2>Sign Up</h2>
+	    <p>Please fill in this form to create an account.</p>
+	    <hr>
+
+	    <label for="email"><b>Email</b></label>
+	    <input type="text" placeholder="Enter Email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter a valid E-mail address.">
+
+	    <label for="psw"><b>Password</b></label>
+	    <input type="password" placeholder="Enter Password" name="psw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+	    <label for="psw-repeat"><b>Repeat Password</b></label>
+	    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+	    
+	    <label>
+	      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+	    </label>
+	    
+	    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+	    <p><b>Already having an account</b> <a style="color:dodgerblue" href="login.html">Click Here</a></p>
+
+	    <div class="clearfix">
+	      <button type="button" class="cancelbtn">Cancel</button>
+	      <button type="submit" class="signupbtn">Sign Up</button>
+	    </div>
+	  </div>
+	</form>
+
+	<!-- Footer -->
+	<footer class="footer" style="margin-top: 2px;">
+		<br>
+		<div style="margin-bottom: -40px; margin-left: 30px;">
+			<img style="width: 20px;" src="facebook.png"> &emsp; <img style="width: 20px;" src="twitter.png"> &emsp; <img style="width: 20px;" src="instagram.png">
+		</div>
+		<div class="footer_ref">
+			<p><a class="one" href="">About us</a> &emsp; <a class="one" href="">Investors relations</a> &emsp; <a class="one" href="">CSR</a> &emsp; <a class="one" href="">Mobile</a> &emsp; <a class="one" href="">Privacy</a> &emsp; <a class="one" href="">Terms of use</a> &emsp; <a class="one" href="">Careers</a> &emsp; <a class="one" href="">Customer service</a> <br><br> </p>
+		</div><br><br><br><hr>
+		<p style="margin-left:470px; padding-bottom: 20px; color: white">&copy; 2021 ATLAS Technologies Pvt Ltd. India. All trademarks of their respective owners.</p>
+	</footer>
+</body>
+</html>
